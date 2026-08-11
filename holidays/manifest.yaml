@@ -1,0 +1,42 @@
+version: 0.0.2
+type: plugin
+author: xtiqny
+name: holidays
+label:
+  en_US: holidays
+  ja_JP: holidays
+  zh_Hans: 节假日判断器
+  pt_BR: holidays
+description:
+  en_US: 'Based on the date, determine whether it is a holiday or a compensatory leave. For example: Input date 2026-07-28 and output whether the current date is a holiday or a compensatory leave.'
+  ja_JP: 'Based on the date, determine whether it is a holiday or a compensatory leave. For example: Input date 2026-07-28 and output whether the current date is a holiday or a compensatory leave.'
+  zh_Hans: '根据日期判断是否是节假日和补休,例如:输入日期2026-07-28 输出当前日期是否是节假日或者补休'
+  pt_BR: 'Based on the date, determine whether it is a holiday or a compensatory leave. For example: Input date 2026-07-28 and output whether the current date is a holiday or a compensatory leave.'
+icon: icon.svg
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+    endpoint:
+      enabled: true
+    app:
+      enabled: true
+    storage:
+      enabled: true
+      size: 1048576
+plugins:
+  tools:
+    - provider/holidays.yaml
+meta:
+  version: 0.0.2
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+created_at: 2026-08-04T09:24:29.282616+08:00
+privacy: https://raw.githubusercontent.com/xtiqny/document/refs/heads/main/PRIVACY.md
+verified: false

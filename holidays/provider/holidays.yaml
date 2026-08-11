@@ -1,0 +1,17 @@
+identity:
+  author: xtiqny
+  name: holidays
+  label:
+    en_US: holidays
+    zh_Hans: 节假日判断器
+    pt_BR: holidays
+  description:
+    en_US: "Based on the date, determine whether it is a holiday or a compensatory leave. For example: Input date 2026-07-28 and output whether the current date is a holiday or a compensatory leave."
+    zh_Hans: "根据日期判断是否是节假日和补休,例如:输入日期2026-07-28 输出当前日期是否是节假日或者补休"
+    pt_BR: "Based on the date, determine whether it is a holiday or a compensatory leave. For example: Input date 2026-07-28 and output whether the current date is a holiday or a compensatory leave."
+  icon: icon.svg
+tools:
+  - tools/holidays.yaml
+extra:
+  python:
+    source: provider/holidays.py
