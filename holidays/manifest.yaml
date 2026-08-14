@@ -2,6 +2,8 @@ version: 0.0.2
 type: plugin
 author: xtiqny
 name: holidays
+repo: https://github.com/xtiqny/plugin/tree/main/holidays
+contact: xtiqny520@qq.com
 label:
   en_US: holidays
   ja_JP: holidays
@@ -30,6 +32,7 @@ plugins:
     - provider/holidays.yaml
 meta:
   version: 0.0.2
+  minimum_dify_version: "0.9.0"
   arch:
     - amd64
     - arm64

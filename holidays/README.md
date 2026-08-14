@@ -1,12 +1,24 @@
 ## holidays
 
 **Author:** xtiqny
-**Version:** 0.0.1
+**Version:** 0.0.2
 **Type:** tool
+**Source repository:** https://github.com/xtiqny/plugin/tree/main/holidays
+**Contact:** xtiqny520@qq.com
+
+### Setup Instructions
+
+- **Prerequisites**: Python 3.12+
+- **Installation**: Add this plugin to your Dify application via the plugin marketplace or by installing from the source repository
+- **Configuration**: No additional configuration required beyond standard Dify plugin setup
 
 ### Description
 
 A Chinese holiday query tool powered by the timor.tech API. This plugin allows you to check whether a specific date is a holiday, a compensatory workday, or a regular working day in China.
+
+#### Connection Requirements
+
+This plugin requires network access to the timor.tech API (https://timor.tech/api/holiday) to retrieve holiday data. Ensure your Dify environment can make outbound HTTP requests to this endpoint.
 
 #### Features
 
@@ -24,7 +36,7 @@ Date format: `2026-07-31` or `2026-7-31`
 - `holiday_name`: Name of the holiday (e.g., "National Day")
 - `wage`: Overtime pay multiplier
 - `rest_days`: Remaining days of the holiday
-- `week_type`: Day of the week in Chinese (e.g., "周五" for Friday)
+- `week_type`: Day of the week (e.g., "Friday")
 - `week_number`: Day of the week as a number (1-7)
 - `type`: Date type (holiday/normal/workday)
 

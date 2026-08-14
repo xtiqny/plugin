@@ -36,6 +36,13 @@ The Holidays plugin collects and processes the following information:
 - **Processing**: Data is processed in real-time and not stored
 - **No Personal Data**: We do not collect personally identifiable information (PII)
 
+### Security and Privacy Notes
+
+- The plugin makes network requests to timor.tech API (https://timor.tech/api/holiday)
+- Only date strings are sent to the external API
+- No personal data is collected or stored
+- All requests use HTTPS encryption
+
 ### User Rights
 
 You have the right to:
